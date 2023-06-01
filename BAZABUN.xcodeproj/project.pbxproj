@@ -9,21 +9,37 @@
 /* Begin PBXBuildFile section */
 		9425518E2A2504A7005B6BF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9425518D2A2504A7005B6BF7 /* AppDelegate.swift */; };
 		942551902A2504A7005B6BF7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9425518F2A2504A7005B6BF7 /* SceneDelegate.swift */; };
-		942551922A2504A7005B6BF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942551912A2504A7005B6BF7 /* ViewController.swift */; };
 		942551952A2504A7005B6BF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 942551932A2504A7005B6BF7 /* Main.storyboard */; };
 		942551972A2504A8005B6BF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 942551962A2504A8005B6BF7 /* Assets.xcassets */; };
 		9425519A2A2504A8005B6BF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 942551982A2504A8005B6BF7 /* LaunchScreen.storyboard */; };
+		942551AA2A25089E005B6BF7 /* SuperMario256.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 942551A92A25089E005B6BF7 /* SuperMario256.ttf */; };
+		94F13C012A25EC27008D93AC /* List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94F13C002A25EC27008D93AC /* List.storyboard */; };
+		94FFAFFA2A25EFEA000AFEF4 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FFAFF92A25EFEA000AFEF4 /* Food.swift */; };
+		94FFAFFD2A25F0DB000AFEF4 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FFAFFC2A25F0DB000AFEF4 /* Colors.swift */; };
+		94FFAFFF2A2766E6000AFEF4 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FFAFFE2A2766E6000AFEF4 /* ListTableViewController.swift */; };
+		94FFB0012A277EA6000AFEF4 /* Intro.otf in Resources */ = {isa = PBXBuildFile; fileRef = 94FFB0002A277EA6000AFEF4 /* Intro.otf */; };
+		94FFB0032A278281000AFEF4 /* InfoAbout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94FFB0022A278281000AFEF4 /* InfoAbout.storyboard */; };
+		94FFB0052A27829D000AFEF4 /* InfoAboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FFB0042A27829D000AFEF4 /* InfoAboutViewController.swift */; };
+		94FFB0082A286E72000AFEF4 /* centurygothic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 94FFB0072A286E72000AFEF4 /* centurygothic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9425518A2A2504A7005B6BF7 /* BAZABUN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BAZABUN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9425518D2A2504A7005B6BF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9425518F2A2504A7005B6BF7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		942551912A2504A7005B6BF7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		942551942A2504A7005B6BF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		942551962A2504A8005B6BF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		942551992A2504A8005B6BF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9425519B2A2504A8005B6BF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		942551A92A25089E005B6BF7 /* SuperMario256.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SuperMario256.ttf; sourceTree = "<group>"; };
+		94F13C002A25EC27008D93AC /* List.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = List.storyboard; sourceTree = "<group>"; };
+		94FFAFF92A25EFEA000AFEF4 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		94FFAFFC2A25F0DB000AFEF4 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		94FFAFFE2A2766E6000AFEF4 /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
+		94FFB0002A277EA6000AFEF4 /* Intro.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Intro.otf; sourceTree = "<group>"; };
+		94FFB0022A278281000AFEF4 /* InfoAbout.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InfoAbout.storyboard; sourceTree = "<group>"; };
+		94FFB0042A27829D000AFEF4 /* InfoAboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoAboutViewController.swift; sourceTree = "<group>"; };
+		94FFB0072A286E72000AFEF4 /* centurygothic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = centurygothic.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +72,55 @@
 		9425518C2A2504A7005B6BF7 /* BAZABUN */ = {
 			isa = PBXGroup;
 			children = (
-				9425518D2A2504A7005B6BF7 /* AppDelegate.swift */,
+				942551A82A25086A005B6BF7 /* Fonts */,
+				94FFAFFB2A25EFF3000AFEF4 /* Model */,
 				9425518F2A2504A7005B6BF7 /* SceneDelegate.swift */,
-				942551912A2504A7005B6BF7 /* ViewController.swift */,
-				942551932A2504A7005B6BF7 /* Main.storyboard */,
+				9425518D2A2504A7005B6BF7 /* AppDelegate.swift */,
+				94FFAFFE2A2766E6000AFEF4 /* ListTableViewController.swift */,
+				94FFB0042A27829D000AFEF4 /* InfoAboutViewController.swift */,
+				94F13C022A25EC3C008D93AC /* Storyboards */,
 				942551962A2504A8005B6BF7 /* Assets.xcassets */,
-				942551982A2504A8005B6BF7 /* LaunchScreen.storyboard */,
+				94FFB0062A2863CE000AFEF4 /* Colors */,
 				9425519B2A2504A8005B6BF7 /* Info.plist */,
 			);
 			path = BAZABUN;
+			sourceTree = "<group>";
+		};
+		942551A82A25086A005B6BF7 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				942551A92A25089E005B6BF7 /* SuperMario256.ttf */,
+				94FFB0002A277EA6000AFEF4 /* Intro.otf */,
+				94FFB0072A286E72000AFEF4 /* centurygothic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		94F13C022A25EC3C008D93AC /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				942551932A2504A7005B6BF7 /* Main.storyboard */,
+				94F13C002A25EC27008D93AC /* List.storyboard */,
+				94FFB0022A278281000AFEF4 /* InfoAbout.storyboard */,
+				942551982A2504A8005B6BF7 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		94FFAFFB2A25EFF3000AFEF4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				94FFAFF92A25EFEA000AFEF4 /* Food.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		94FFB0062A2863CE000AFEF4 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				94FFAFFC2A25F0DB000AFEF4 /* Colors.swift */,
+			);
+			path = Colors;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +181,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94FFB0012A277EA6000AFEF4 /* Intro.otf in Resources */,
 				9425519A2A2504A8005B6BF7 /* LaunchScreen.storyboard in Resources */,
+				942551AA2A25089E005B6BF7 /* SuperMario256.ttf in Resources */,
 				942551972A2504A8005B6BF7 /* Assets.xcassets in Resources */,
 				942551952A2504A7005B6BF7 /* Main.storyboard in Resources */,
+				94FFB0082A286E72000AFEF4 /* centurygothic.ttf in Resources */,
+				94FFB0032A278281000AFEF4 /* InfoAbout.storyboard in Resources */,
+				94F13C012A25EC27008D93AC /* List.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +199,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				942551922A2504A7005B6BF7 /* ViewController.swift in Sources */,
+				94FFAFFD2A25F0DB000AFEF4 /* Colors.swift in Sources */,
 				9425518E2A2504A7005B6BF7 /* AppDelegate.swift in Sources */,
+				94FFAFFA2A25EFEA000AFEF4 /* Food.swift in Sources */,
 				942551902A2504A7005B6BF7 /* SceneDelegate.swift in Sources */,
+				94FFB0052A27829D000AFEF4 /* InfoAboutViewController.swift in Sources */,
+				94FFAFFF2A2766E6000AFEF4 /* ListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +351,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6PZ2VM529M;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BAZABUN/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -301,9 +366,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ArtemyDerik.BAZABUN;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -314,6 +382,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6PZ2VM529M;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BAZABUN/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -328,9 +397,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ArtemyDerik.BAZABUN;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
