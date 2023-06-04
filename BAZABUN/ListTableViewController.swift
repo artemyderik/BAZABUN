@@ -22,51 +22,23 @@ class ListTableViewController: UITableViewController {
     // MARK: - Table view data source
     override func numberOfSections(in tableView: UITableView) -> Int {
         food.count
-       // Food.getTypes().count
     }
-    
-     /*
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        
-        switch food[section].type {
-        case .hotDogs:
-            return "ХОТ-ДОГИ"
-        case .cornDogs:
-            return "КОРН-ДОГИ"
-        case .sides:
-            return "SIDES"
-        case .drinks:
-            return "НАПИТКИ"
-        case .salats:
-            return "САЛАТИКИ"
-        default:
-            return "??"
 
-        }
-        //return result
-        //Food.getTypes()[section]
-    }
-      */
-    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         food[section].products.count
-        //return menu.count
     }
-    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "food", for: indexPath)
         
         let foodItem = food[indexPath.section].products[indexPath.row]
         
-       // let foodItem = menu[indexPath.row]
         var content = cell.defaultContentConfiguration()
 
         cell.backgroundColor = brandColor
         
         content.text = foodItem.name
         
-        //content.textProperties.font = UIFont(name: "centurygothic", size: 18) ?? UIFont.systemFont(ofSize: 20)
         content.textProperties.font = UIFont(name: "Intro", size: 21) ?? UIFont.systemFont(ofSize: 20)
         content.textProperties.color = .white
         
@@ -81,26 +53,18 @@ class ListTableViewController: UITableViewController {
         tableView.deselectRow(at: indexPath, animated: true)
         
         let storyboard = UIStoryboard(name: "InfoAbout", bundle: nil)
-        let infoAbout = storyboard.instantiateViewController(withIdentifier: "InfoAbout")
-
-        self.present(infoAbout, animated: true)
+        guard let infoAbout = storyboard.instantiateViewController(withIdentifier: "InfoAbout") as? InfoAboutViewController else { return }
+        infoAbout.foodItem = food[indexPath.section].products[indexPath.row]
+        
+        present(infoAbout, animated: true)
     }
     
+    override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        view.backgroundColor = brandColor
+    }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let infoAboutVC = segue.destination as? InfoAboutViewController else { return }
-        guard let indexPath = tableView.indexPathForSelectedRow else { return }
-        infoAboutVC.delegate = self
-        infoAboutVC.foodItem = food[indexPath.section].products[indexPath.row]
-        //infoAboutVC.foodItem = menu[indexPath.row]
-    } 
-}
-
-//MARK: listTableViewDelegate
-extension ListTableViewController: listTableViewDelegate {
-    func setNewValue(from foodItem: Food) {
-        guard let indexPath = tableView.indexPathForSelectedRow else { return }
-        menu[indexPath.row] = foodItem
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        40
     }
 }
 
@@ -133,17 +97,10 @@ extension ListTableViewController {
         
         foodTypeLabel.font = UIFont(name: "Progress-BoldItalic", size: 33)
         foodTypeLabel.textColor = lightBrandColor
-        foodTypeLabel.backgroundColor = brandColor
         
         let contentView = UIView()
         contentView.addSubview(foodTypeLabel)
         
         return contentView
     }
-    
-    override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
-        //view.backgroundColor = .black
-    }
-    
-    
 }
