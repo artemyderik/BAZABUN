@@ -12,8 +12,7 @@ protocol listTableViewDelegate {
 }
 
 class InfoAboutViewController: UIViewController {
-    var foodItem: Food!
-    var delegate: listTableViewDelegate!
+    var foodItem: Food!    
     
     @IBOutlet var topPicture: UIImageView!
     @IBOutlet var photoOfFood: UIImageView!
@@ -24,13 +23,24 @@ class InfoAboutViewController: UIViewController {
         super.viewDidLoad()
         fullBeautySetup()
     }
-    
+
     private func fullBeautySetup() {
-        view.backgroundColor = brandColor
+        view.backgroundColor = .black
         topPicture.image = UIImage(named: "bazabun_logo")
         photoOfFood.image = UIImage(named: foodItem.photo)
-        setupTextOf(nameOfFood, foodItem.name, .white, UIFont(name: "Intro", size: 29))
-        setupTextOf(discriptionOfFood, foodItem.discription, .white, UIFont(name: "centurygothic", size: 18))
+        setupTextOf(
+            nameOfFood,
+            foodItem.name,
+                .white,
+            UIFont(name: "Intro", size: 39)
+        )
+        
+        setupTextOf(
+            discriptionOfFood,
+            foodItem.discription,
+            discriptionColor,
+            UIFont(name: "centurygothic", size: 22)
+        )
     }
     
     private func setupTextOf(_ label: UILabel, _ text: String, _ color: UIColor, _ font: UIFont?) {

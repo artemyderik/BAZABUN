@@ -2,11 +2,13 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>ATSApplicationFontsPath</key>
+	<string></string>
 	<key>UIAppFonts</key>
 	<array>
-		<string>SuperMario256.ttf</string>
 		<string>Intro.otf</string>
 		<string>centurygothic.ttf</string>
+		<string>progress.otf</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
