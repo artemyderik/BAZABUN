@@ -12,7 +12,7 @@
 		942551952A2504A7005B6BF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 942551932A2504A7005B6BF7 /* Main.storyboard */; };
 		942551972A2504A8005B6BF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 942551962A2504A8005B6BF7 /* Assets.xcassets */; };
 		9425519A2A2504A8005B6BF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 942551982A2504A8005B6BF7 /* LaunchScreen.storyboard */; };
-		942551AA2A25089E005B6BF7 /* SuperMario256.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 942551A92A25089E005B6BF7 /* SuperMario256.ttf */; };
+		946175CF2A2B5DB0008B5866 /* progress.otf in Resources */ = {isa = PBXBuildFile; fileRef = 946175CE2A2B5DB0008B5866 /* progress.otf */; };
 		94F13C012A25EC27008D93AC /* List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94F13C002A25EC27008D93AC /* List.storyboard */; };
 		94FFAFFA2A25EFEA000AFEF4 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FFAFF92A25EFEA000AFEF4 /* Food.swift */; };
 		94FFAFFD2A25F0DB000AFEF4 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FFAFFC2A25F0DB000AFEF4 /* Colors.swift */; };
@@ -21,6 +21,7 @@
 		94FFB0032A278281000AFEF4 /* InfoAbout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94FFB0022A278281000AFEF4 /* InfoAbout.storyboard */; };
 		94FFB0052A27829D000AFEF4 /* InfoAboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FFB0042A27829D000AFEF4 /* InfoAboutViewController.swift */; };
 		94FFB0082A286E72000AFEF4 /* centurygothic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 94FFB0072A286E72000AFEF4 /* centurygothic.ttf */; };
+		94FFB00A2A28F54E000AFEF4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FFB0092A28F54E000AFEF4 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +32,7 @@
 		942551962A2504A8005B6BF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		942551992A2504A8005B6BF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9425519B2A2504A8005B6BF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		942551A92A25089E005B6BF7 /* SuperMario256.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SuperMario256.ttf; sourceTree = "<group>"; };
+		946175CE2A2B5DB0008B5866 /* progress.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = progress.otf; sourceTree = "<group>"; };
 		94F13C002A25EC27008D93AC /* List.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = List.storyboard; sourceTree = "<group>"; };
 		94FFAFF92A25EFEA000AFEF4 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		94FFAFFC2A25F0DB000AFEF4 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -40,6 +41,7 @@
 		94FFB0022A278281000AFEF4 /* InfoAbout.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InfoAbout.storyboard; sourceTree = "<group>"; };
 		94FFB0042A27829D000AFEF4 /* InfoAboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoAboutViewController.swift; sourceTree = "<group>"; };
 		94FFB0072A286E72000AFEF4 /* centurygothic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = centurygothic.ttf; sourceTree = "<group>"; };
+		94FFB0092A28F54E000AFEF4 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				942551A82A25086A005B6BF7 /* Fonts */,
 				94FFAFFB2A25EFF3000AFEF4 /* Model */,
 				9425518F2A2504A7005B6BF7 /* SceneDelegate.swift */,
+				94FFB0092A28F54E000AFEF4 /* MainViewController.swift */,
 				9425518D2A2504A7005B6BF7 /* AppDelegate.swift */,
 				94FFAFFE2A2766E6000AFEF4 /* ListTableViewController.swift */,
 				94FFB0042A27829D000AFEF4 /* InfoAboutViewController.swift */,
@@ -89,9 +92,9 @@
 		942551A82A25086A005B6BF7 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				942551A92A25089E005B6BF7 /* SuperMario256.ttf */,
 				94FFB0002A277EA6000AFEF4 /* Intro.otf */,
 				94FFB0072A286E72000AFEF4 /* centurygothic.ttf */,
+				946175CE2A2B5DB0008B5866 /* progress.otf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -181,9 +184,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				946175CF2A2B5DB0008B5866 /* progress.otf in Resources */,
 				94FFB0012A277EA6000AFEF4 /* Intro.otf in Resources */,
 				9425519A2A2504A8005B6BF7 /* LaunchScreen.storyboard in Resources */,
-				942551AA2A25089E005B6BF7 /* SuperMario256.ttf in Resources */,
 				942551972A2504A8005B6BF7 /* Assets.xcassets in Resources */,
 				942551952A2504A7005B6BF7 /* Main.storyboard in Resources */,
 				94FFB0082A286E72000AFEF4 /* centurygothic.ttf in Resources */,
@@ -199,6 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94FFB00A2A28F54E000AFEF4 /* MainViewController.swift in Sources */,
 				94FFAFFD2A25F0DB000AFEF4 /* Colors.swift in Sources */,
 				9425518E2A2504A7005B6BF7 /* AppDelegate.swift in Sources */,
 				94FFAFFA2A25EFEA000AFEF4 /* Food.swift in Sources */,
