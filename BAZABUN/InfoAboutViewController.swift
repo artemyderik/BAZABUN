@@ -12,9 +12,7 @@ protocol listTableViewDelegate {
 }
 
 class InfoAboutViewController: UIViewController {
-    var foodItem: Food!
-    var delegate: listTableViewDelegate!
-    
+    var foodItem: Food!    
     
     @IBOutlet var topPicture: UIImageView!
     @IBOutlet var photoOfFood: UIImageView!
@@ -25,7 +23,7 @@ class InfoAboutViewController: UIViewController {
         super.viewDidLoad()
         fullBeautySetup()
     }
-    
+
     private func fullBeautySetup() {
         view.backgroundColor = .black
         topPicture.image = UIImage(named: "bazabun_logo")
