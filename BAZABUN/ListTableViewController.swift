@@ -16,9 +16,10 @@ class ListTableViewController: UITableViewController {
         super.viewDidLoad()
         tableView.backgroundColor = brandColor
         tableView.rowHeight = 100
-        navigationItem.titleView?.backgroundColor = .black
+        setUpNavigationItem()
+
     }
-    
+
     // MARK: - Table view data source
     override func numberOfSections(in tableView: UITableView) -> Int {
         food.count
@@ -102,5 +103,19 @@ extension ListTableViewController {
         contentView.addSubview(foodTypeLabel)
         
         return contentView
+    }
+}
+
+//MARK: SetUpNavigationItem
+extension ListTableViewController {
+    private func setUpNavigationItem() {
+        let navItemView = UILabel()
+        
+        navItemView.font = UIFont(name: "Intro", size: 18)
+        navItemView.text = "..."
+        navItemView.backgroundColor = .black
+        
+        navigationItem.titleView?.addSubview(navItemView)
+        
     }
 }
