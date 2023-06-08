@@ -36,10 +36,10 @@
             </objects>
             <point key="canvasLocation" x="902" y="390"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--List Navigation Controller-->
         <scene sceneID="wfO-Pd-xlq">
             <objects>
-                <navigationController storyboardIdentifier="ListNavigationController" modalPresentationStyle="fullScreen" id="t7f-o4-3LQ" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="ListNavigationController" modalPresentationStyle="fullScreen" id="t7f-o4-3LQ" customClass="ListNavigationController" customModule="BAZABUN" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="eLj-T6-Dum">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

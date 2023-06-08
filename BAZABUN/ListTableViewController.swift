@@ -14,10 +14,8 @@ class ListTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.backgroundColor = brandColor
-        tableView.rowHeight = 100
-        setUpNavigationItem()
-
+        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "food")
+        setUpViews()
     }
 
     // MARK: - Table view data source
@@ -74,7 +72,7 @@ extension ListTableViewController {
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let foodTypeLabel = UILabel(
             frame: CGRect(
-                x: 15,
+                x: 12,
                 y: 0,
                 width: view.frame.width,
                 height: 40
@@ -83,21 +81,21 @@ extension ListTableViewController {
         
         switch food[section].type {
         case .hotDogs:
-            foodTypeLabel.text = "ХОТ-ДОГИ"
+            foodTypeLabel.text = " ХОТ-ДОГИ"
         case .cornDogs:
-            foodTypeLabel.text = "КОРН-ДОГИ"
+            foodTypeLabel.text = " КОРН-ДОГИ"
         case .sides:
-            foodTypeLabel.text = "SIDES"
+            foodTypeLabel.text = " ЗАКУСКИ"
         case .drinks:
-            foodTypeLabel.text = "НАПИТКИ"
+            foodTypeLabel.text = " НАПИТКИ"
         case .salats:
-            foodTypeLabel.text = "САЛАТИКИ"
+            foodTypeLabel.text = " САЛАТИКИ"
         default:
-            foodTypeLabel.text = "??"
+            foodTypeLabel.text = " ??"
         }
         
         foodTypeLabel.font = UIFont(name: "Progress-BoldItalic", size: 33)
-        foodTypeLabel.textColor = lightBrandColor
+        foodTypeLabel.textColor = lightLightBrandColor
         
         let contentView = UIView()
         contentView.addSubview(foodTypeLabel)
@@ -106,16 +104,28 @@ extension ListTableViewController {
     }
 }
 
-//MARK: SetUpNavigationItem
+//MARK: SetUpViews Method
 extension ListTableViewController {
-    private func setUpNavigationItem() {
-        let navItemView = UILabel()
-        
-        navItemView.font = UIFont(name: "Intro", size: 18)
-        navItemView.text = "..."
-        navItemView.backgroundColor = .black
-        
-        navigationItem.titleView?.addSubview(navItemView)
-        
+    private func setUpViews() {
+        setUpTableView()
+        setUpNavBar()
+        setUp(tabBar: tabBarController?.tabBar)
+    }
+    
+    private func setUpTableView() {
+        tableView.backgroundColor = brandColor
+        tableView.rowHeight = 100
+    }
+
+    private func setUpNavBar() {
+        navigationItem.title = "МЕНЮ"
+        navigationController?.navigationBar.barTintColor = brandColor
+    }
+    
+    private func setUp(tabBar: UITabBar?) {
+        tabBar?.tintColor = lightLightBrandColor
+        tabBar?.unselectedItemTintColor = .white
+        tabBar?.backgroundColor = .brown
+        tabBar?.barTintColor = .brown
     }
 }
