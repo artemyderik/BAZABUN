@@ -52,10 +52,10 @@ class ListTableViewController: UITableViewController {
         tableView.deselectRow(at: indexPath, animated: true)
         
         let storyboard = UIStoryboard(name: "InfoAbout", bundle: nil)
-        guard let infoAbout = storyboard.instantiateViewController(withIdentifier: "InfoAbout") as? InfoAboutViewController else { return }
-        infoAbout.foodItem = food[indexPath.section].products[indexPath.row]
+        guard let infoAboutVC = storyboard.instantiateViewController(withIdentifier: "InfoAbout") as? InfoAboutViewController else { return }
+        infoAboutVC.foodItem = food[indexPath.section].products[indexPath.row]
         
-        present(infoAbout, animated: true)
+        present(infoAboutVC, animated: true)
     }
     
     override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {

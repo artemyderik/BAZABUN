@@ -51,6 +51,23 @@
                                     <constraint firstAttribute="height" constant="70" id="nHD-8s-VpO"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iZe-yk-qqd">
+                                <rect key="frame" x="326.33333333333331" y="255.33333333333334" width="38.666666666666686" height="20.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wLB-tv-TzS">
+                                <rect key="frame" x="175" y="619" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="9Qt-cv-UyR"/>
+                                    <constraint firstAttribute="width" constant="40" id="FKl-58-Sin"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="addButtonDidTapped" destination="Y6W-OH-hqX" eventType="touchUpInside" id="0a3-4l-X6l"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -59,25 +76,31 @@
                             <constraint firstItem="lWZ-QA-WCd" firstAttribute="top" secondItem="udu-ku-eVT" secondAttribute="bottom" id="EmI-1C-9lR"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Klo-la-veO" secondAttribute="trailing" constant="25" id="N1p-L6-cLf"/>
                             <constraint firstItem="udu-ku-eVT" firstAttribute="centerX" secondItem="Klo-la-veO" secondAttribute="centerX" id="XMZ-SL-rU7"/>
+                            <constraint firstItem="wLB-tv-TzS" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="XiD-Ac-AKq"/>
                             <constraint firstItem="lWZ-QA-WCd" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="45" id="cAh-oL-Bgj"/>
                             <constraint firstItem="I99-Mg-DQV" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="cG6-fB-jsh"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="iZe-yk-qqd" secondAttribute="trailing" constant="25" id="cru-Ju-28j"/>
                             <constraint firstItem="udu-ku-eVT" firstAttribute="top" secondItem="Klo-la-veO" secondAttribute="bottom" id="eP1-Ah-xKd"/>
                             <constraint firstItem="I99-Mg-DQV" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="10" id="fxx-7w-nBd"/>
+                            <constraint firstItem="wLB-tv-TzS" firstAttribute="top" secondItem="lWZ-QA-WCd" secondAttribute="bottom" constant="30" id="oL5-uv-AeM"/>
                             <constraint firstItem="udu-ku-eVT" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="s64-w8-Hlo"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="lWZ-QA-WCd" secondAttribute="trailing" constant="45" id="uUf-nX-21i"/>
                             <constraint firstItem="Klo-la-veO" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="uiZ-vd-2hc"/>
+                            <constraint firstItem="udu-ku-eVT" firstAttribute="top" secondItem="iZe-yk-qqd" secondAttribute="bottom" id="whF-qE-WqZ"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="addButton" destination="wLB-tv-TzS" id="1pJ-K4-Q6m"/>
                         <outlet property="discriptionOfFood" destination="lWZ-QA-WCd" id="LWO-Gh-0TH"/>
                         <outlet property="nameOfFood" destination="Klo-la-veO" id="501-tb-vsX"/>
                         <outlet property="photoOfFood" destination="XZZ-Ge-UcE" id="Ad0-0f-aEB"/>
+                        <outlet property="priceLabel" destination="iZe-yk-qqd" id="0Jz-X8-Dbi"/>
                         <outlet property="topPicture" destination="I99-Mg-DQV" id="dpU-We-vEZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="64.885496183206101" y="-2.1126760563380285"/>
+            <point key="canvasLocation" x="64.615384615384613" y="-2.1327014218009479"/>
         </scene>
     </scenes>
     <resources>
