@@ -7,17 +7,18 @@
 import UIKit
 
 class ListTableViewController: UITableViewController {
-    var delegate: listTableViewDelegate!
         
+    //MARK: Private properties
     private var foodByTypes = FoodItem.getProducts()
     
+    //MARK: Override methods
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "food")
         setUpViews()
     }
 
-    // MARK: - Table view data source
+    // MARK: UITableViewDataSource
     override func numberOfSections(in tableView: UITableView) -> Int {
         foodByTypes.count
     }
@@ -56,18 +57,16 @@ class ListTableViewController: UITableViewController {
         
         present(infoAboutVC, animated: true)
     }
-    
-    override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
-        view.backgroundColor = brandColor
-    }
-    
-    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        40
-    }
+
 }
 
 //MARK: UITableViewDelegate
 extension ListTableViewController {
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        40
+    }
+    
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let foodTypeLabel = UILabel(
             frame: CGRect(
@@ -77,22 +76,8 @@ extension ListTableViewController {
                 height: 40
             )
         )
-        
-        switch foodByTypes[section].type {
-        case .hotDogs:
-            foodTypeLabel.text = " ХОТ-ДОГИ"
-        case .cornDogs:
-            foodTypeLabel.text = " КОРН-ДОГИ"
-        case .sides:
-            foodTypeLabel.text = " ЗАКУСКИ"
-        case .drinks:
-            foodTypeLabel.text = " НАПИТКИ"
-        case .salats:
-            foodTypeLabel.text = " САЛАТИКИ"
-        default:
-            foodTypeLabel.text = " ??"
-        }
-        
+
+        foodTypeLabel.text = foodByTypes[section].products[0].type
         foodTypeLabel.font = UIFont(name: "Progress-BoldItalic", size: 33)
         foodTypeLabel.textColor = lightLightBrandColor
         
@@ -101,6 +86,11 @@ extension ListTableViewController {
         
         return contentView
     }
+    
+    override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        view.backgroundColor = brandColor
+    }
+
 }
 
 //MARK: SetUpViews Method

@@ -7,32 +7,35 @@
 
 import UIKit
 
-protocol listTableViewDelegate {
-    func setNewValue(from foodItem: Food)
-}
-
 class InfoAboutViewController: UIViewController {
-    var foodItem: Food!    
+
+    //MARK: Public Properties
+    var foodItem: Food!
     
+    //MARK: IB Outlets
     @IBOutlet var topPicture: UIImageView!
     @IBOutlet var photoOfFood: UIImageView!
     @IBOutlet var nameOfFood: UILabel!
     @IBOutlet var discriptionOfFood: UILabel!
     @IBOutlet var priceLabel: UILabel!
     @IBOutlet var addButton: UIButton!
+    private var foodBasket = [Food]()
     
+    //MARK: Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        fullBeautySetup()
+        setupViews()
         setupAddButton()
     }
 
+    //MARK: IB Actions
     @IBAction func addButtonDidTapped() {
-        
+        foodBasket.append(foodItem)
         dismiss(animated: true)
     }
     
-    private func fullBeautySetup() {
+    //MARK: Private Methods
+    private func setupViews() {
         view.backgroundColor = .black
         
         topPicture.image = UIImage(named: "bazabun_logo")
@@ -66,10 +69,14 @@ class InfoAboutViewController: UIViewController {
     }
     
     private func setupAddButton() {
-        addButton.tintColor = .white
-        addButton.backgroundColor = brandColor
-        addButton.setTitle("+", for: .normal)
+        addButton.tintColor = #colorLiteral(red: 0.9757878184, green: 0.6566575766, blue: 0, alpha: 1)
+        addButton.backgroundColor = .clear
+        
+        addButton.layer.borderColor = #colorLiteral(red: 0.9757878184, green: 0.6566575766, blue: 0, alpha: 1)
+        addButton.layer.borderWidth = 2
         addButton.layer.cornerRadius = 8
+        
+        addButton.setTitle("+", for: .normal)
         addButton.titleLabel?.font = UIFont.systemFont(ofSize: 28, weight: .bold)
     }
 }

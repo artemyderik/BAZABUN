@@ -9,7 +9,8 @@ import UIKit
 
 class BasketViewController: UIViewController, UITableViewDataSource {
 
-    let baskeTableView = UITableView()
+    let basketTableView = UITableView()
+    var menu = FoodItem.getProducts()
     
     var food = [Food(
         type: "SIDES",
@@ -19,17 +20,16 @@ class BasketViewController: UIViewController, UITableViewDataSource {
         photo: "frenchFries",
         price: "150р"
     )]
-    var menu = FoodItem.getProducts()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)
         
-        view.addSubview(baskeTableView)
+        view.addSubview(basketTableView)
         setUpTableView()
-        
-        baskeTableView.dataSource = self
-        baskeTableView.register(UITableViewCell.self, forCellReuseIdentifier: "basketCell")
+                
+        basketTableView.dataSource = self
+        basketTableView.register(UITableViewCell.self, forCellReuseIdentifier: "basketCell")
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -49,10 +49,10 @@ class BasketViewController: UIViewController, UITableViewDataSource {
     
     
     private func setUpTableView() {
-        baskeTableView.translatesAutoresizingMaskIntoConstraints = false
-        baskeTableView.topAnchor.constraint(equalTo:view.topAnchor).isActive = true
-        baskeTableView.leftAnchor.constraint(equalTo:view.leftAnchor).isActive = true
-        baskeTableView.rightAnchor.constraint(equalTo:view.rightAnchor).isActive = true
-        baskeTableView.bottomAnchor.constraint(equalTo:view.bottomAnchor).isActive = true
+        basketTableView.translatesAutoresizingMaskIntoConstraints = false
+        basketTableView.topAnchor.constraint(equalTo:view.topAnchor).isActive = true
+        basketTableView.leftAnchor.constraint(equalTo:view.leftAnchor).isActive = true
+        basketTableView.rightAnchor.constraint(equalTo:view.rightAnchor).isActive = true
+        basketTableView.bottomAnchor.constraint(equalTo:view.bottomAnchor).isActive = true
     }
 }
