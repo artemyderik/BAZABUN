@@ -4,7 +4,6 @@
 //
 //  Created by Артемий Дериглазов on 30.05.2023.
 //
-
 enum FoodTypes: String {
     case hotDogs
     case cornDogs
@@ -104,9 +103,9 @@ struct FoodItem {
                     type: "САЛАТИКИ",
                     name: "КОУЛ СЛОУ",
                     discription: "Классический салат из белой, красной капусты и морковки, заправленный медово-горчичным соусом",
-                    weight: "Безлимит",
+                    weight: "120г",
                     photo: "coleslaw",
-                    price: "49р"
+                    price: "89р"
                 )
             ]),
             
@@ -273,5 +272,7 @@ extension Sequence where Element: Hashable {
         return filter { set.insert($0).inserted }
     }
 }
+
+
 
 
